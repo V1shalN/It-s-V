@@ -1,0 +1,93 @@
+.aboutComp
+{
+  font-size: 30px;
+}
+.usColor
+{
+  color: blue;
+}
+.compAboutMain
+{
+  background: linear-gradient(skyblue,white);
+  height: 100vh;
+    width: 100vw;
+}
+.compAboutMain h1{
+  padding: 100px 0 0 0 ;
+}
+.compMain
+{
+  /* background-image: url("src/assets/compBg.png"); */
+  animation: slideInUp 1s ease forwards;
+    
+    /* padding: 80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 0; */
+}
+.cyberTruckcom
+{
+  /* margin-top: 50px; */
+  animation: slideOutRight 7s linear infinite 1s;
+
+}
+.videoPlayScreen
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 20px black;
+  scale: 0.5;
+  transition: 0.3s ease;
+  &:before {
+    text-align: center;
+    padding: 0.2em;
+    display: block;
+    background-color: #4e4e4e;
+  }
+  &:after {
+    margin: 0.2em;
+  }
+  &:hover {
+    scale: 0.8;
+  }
+}
+.compMain img{
+  width: 60vw;
+  /* margin-top: 280px; */
+  /* overflow: hidden; */
+  position: absolute;
+}
+
+  video {
+    margin-bottom: 60px;
+
+    /* position: absolute; */
+    /* width: 43.1em; */
+    border-radius: 10px;
+    width: 56vw; 
+    /* min-height: 100%; */
+    /* z-index:-100; */
+  }
+/* card */
+.aboutCompText
+{
+  margin: 0px 0px 0px 100px;
+  padding: 35px;
+  text-align: justify;
+  scale: 1;
+  transition: 0.3s ease;
+  &:before {
+    text-align: center;
+    padding: 0.2em;
+    display: block;
+    background-color: #4e4e4e;
+  }
+  &:after {
+    margin: 0.2em;
+  }
+  &:hover {
+    scale: 1.3;
+  }
+}

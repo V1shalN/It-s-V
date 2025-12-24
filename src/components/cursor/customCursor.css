@@ -1,0 +1,23 @@
+/* customCursor.css */
+*{
+  cursor: none;
+}
+.customCursor {
+    position: fixed; 
+    width: 15px; /* Adjust the size of the cursor circle */
+    height: 15px;
+    backdrop-filter: blur(1px);
+    background-color: transparent; /* Black color with some transparency */
+    border: 2px solid black; /* White border */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Prevent cursor from interfering with other elements */
+    transform: translate(-50%, -50%); /* Center the circle on the cursor position */
+    z-index: 1000; /* Ensure it is above other elements */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+  }
+
+  .customCursor:hover{
+    height: 20px;
+    width: 20px;
+  }
+  

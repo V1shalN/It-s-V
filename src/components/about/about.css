@@ -1,0 +1,208 @@
+.aboutmain {
+  background: linear-gradient(skyblue, white);
+  overflow-x: hidden;
+}
+
+/* Cybertruck animation */
+.aboutCyber {
+  animation: slideOutRight 7s linear infinite 1s;
+}
+
+.aboutCyber:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Section */
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Model text */
+.aboutP {
+  padding: 30px 70px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+/* Slider */
+.aboutCarSlider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Slider item */
+.sliderItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Slider image */
+.sliderItem img {
+  height: 130px;
+  padding: 20px;
+  animation: fadeInRightBig 1s ease forwards;
+}
+
+/* Animation */
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Buttons */
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: blue;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.sliderButton:first-of-type {
+  left: 10px;
+}
+
+.sliderButton:last-of-type {
+  right: 10px;
+}
+
+/* Car name */
+.carName {
+  margin-top: 5px;
+  font-weight: bold;
+  color: blue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Car details */
+.carDetails {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.carDetails h2 {
+  color: blue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.carDetailsContent {
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carDetailsContent img {
+  height: 300px;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.carDetails p {
+  max-width: 350px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* Buy button */
+.buyButton {
+  position: relative;
+  background: transparent;
+  border: 2px solid blue;
+  color: blue;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 12px 28px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Text positioning */
+.buyButton span {
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Default text */
+.text-default {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover text hidden initially */
+.text-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  opacity: 0;
+  color: white;
+}
+
+/* Hover effect */
+.buyButton:hover {
+  background: blue;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Animate text on hover */
+.buyButton:hover .text-default {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.buyButton:hover .text-hover {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sliderItem img {
+    height: 90px;
+  }
+
+  .carDetailsContent img {
+    height: 220px;
+  }
+}

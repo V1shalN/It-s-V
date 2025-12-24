@@ -1,0 +1,195 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.navSecond
+{
+    color: blue;
+}
+nav
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.navContainer
+{
+    backdrop-filter: blur(1px);
+    background-color: white;
+    box-shadow: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    backdrop-filter: blur(px);
+    z-index: 100;
+}
+
+.navLogo
+{
+    animation: zoomInLeft 1s ease forwards;
+    font-size: 50px;
+}
+.zoomInLeft {
+    -webkit-animation-name: zoomInLeft;
+    animation-name: zoomInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+    @keyframes zoomInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    } 
+/* NavLogo End*/
+/* Navbar List */
+.navBarli .navopt{
+    list-style-type: none;
+    float: left;
+    margin-left: 30px;
+}
+.navBarli li a{
+    font-size: 18px;
+}
+.navBarli{
+    animation: focus-in-expand 1s ease forwards;
+}
+@keyframes focus-in-expand {
+			
+    0% {
+        letter-spacing:-.5em;
+        filter:blur(12px);
+        opacity:0;
+    }
+    100% {
+        filter:blur(0);
+        opacity:1;
+    }
+}
+/* Navbar List End*/
+/* Navbar Social List */
+.navBarSocial li{
+    list-style-type: none;
+    float: left;
+    margin-left: 30px;
+}
+.navBarSocial{
+    animation: focus-in-expand 1s ease forwards;
+}
+.navBarSocial li a i{
+    font-size: 20px;
+}
+/* Navbar Social List End*/
+
+/* hover */
+.navLogo:hover
+{
+    color:blue;
+    text-shadow: 5px 5px 10px black;
+    font-size:55px ;
+}
+.navBarli li a:hover
+{
+    color: blue;
+    font-size: 20px;
+    border-bottom: 2px solid green;
+}
+.navBarSocial li a .fa-facebook-f:hover
+{
+    text-shadow: 5px 5px 10px black;
+    color: rgb(17, 64, 219);
+    font-size: 25px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+}
+.navBarSocial li a .fa-instagram:hover
+{
+    text-shadow: 5px 5px 10px black;
+    color: red;
+    font-size: 27px;
+    border-bottom: 2px solid red;
+}
+.navBarSocial li a .fa-x-twitter:hover
+{
+    text-shadow: 5px 5px 10px black;
+    color: black;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+}
+/* hover end*/
+
+/* dropdown */
+.navItemWithDropdown {
+    position: relative;
+    /* overflow:none; */
+}
+
+.dropdownMenu {
+    
+    text-align: center;
+    position: absolute;
+    top: 3vh;
+    left: -11vh;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* padding: 10px 0; */
+    z-index: 1000;
+    border-radius: 20px;
+    display: block;
+    min-width: 200px;
+}
+
+.dropdownMenu li {
+
+    list-style: none;
+    margin: 0;
+}
+
+.dropdownMenu li a {
+    font-size: 16px;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 6px 16px;
+}
+
+.dropdownMenu li a:hover {
+      overflow:none;
+    background-color: #f1f1f1;
+  }
+/* dropdown End */
